@@ -1,6 +1,6 @@
 ---
 web:
-  container_name: nginx-introduction
+  container_name: nginx-fundweb
   image: "nginx:latest"
   ports:
   - "80:80"
@@ -8,3 +8,4 @@ web:
   volumes:
   - ./www:/www
   - ./site.conf:/etc/nginx/conf.d/site.conf
+  
