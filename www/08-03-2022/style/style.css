@@ -1,0 +1,35 @@
+body {      
+    font-family: 'Azeret Mono', monospace;
+    font-family: 'PT Sans', sans-serif;
+    background-image: url("https://pbs.twimg.com/ext_tw_video_thumb/1388140867916083201/pu/img/iMCBtYooqYdQt2C3?format=jpg&name=large");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#back {
+    margin: 50px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+#ul_all {
+    max-width: 200px;
+}
+a {
+    text-decoration: none;
+}
+#img {
+    margin-top: 80px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    text-indent: 1.5em;
+}

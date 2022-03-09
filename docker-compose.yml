@@ -7,5 +7,5 @@ web:
   restart: always
   volumes:
   - ./www:/www
-  - ./site.conf:/etc/nginx/conf.d/site.conf
+  - ./site.conf:/etc/nginx/conf.d/default.conf
   
