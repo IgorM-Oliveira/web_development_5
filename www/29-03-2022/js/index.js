@@ -13,6 +13,6 @@ const classificacao = [
 
 classificacao.forEach((item) => {
     if (imc > item.imc[0] && imc <= item.imc[1]) {
-        alert(`IMC: ${imc}\nClassificação: ${item.name}\nGrau: ${item.grau}\n`)
+        alert(`IMC: ${imc.toFixed(2)}\nClassificação: ${item.name}\nGrau: ${item.grau}\n`)
     }
 });
