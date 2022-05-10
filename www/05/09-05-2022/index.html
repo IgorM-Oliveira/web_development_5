@@ -1,269 +1,265 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Aula 04/05/2022</title>
-        <meta charset="UTF-8"/>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-    </head>
-    <body>
-      <div class="form">
-        <p>Dificuldade</p>
-        <select name="select">
-          <option value="0"></option>
-          <option value="1">Facil</option>
-          <option value="2">Normal</option>
-          <option value="3">Difícil</option>
-        </select>
+<html lang="pt-BR">
+
+<head>
+  <title>Caça ao Tesouro</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="game">
+    <div id="header">
+      <div class="panel">
+        <label>
+          <strong>Dificuldade:</strong>
+          <select class="browser-default" id="difficulty">
+            <option value="" disabled selected>Escolha uma Opção</option>
+            <option value="1">Fácil</option>
+            <option value="2">Médio</option>
+            <option value="3">Difícil</option>
+          </select>
+        </label>
       </div>
-    
-      <div class="table">
-        <table>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
+      <h1>Caça ao Tesouro</h1>
+
+      <div class="panel">
+        <label>
+          <strong>Quantidade de Tentativas:</strong>
+        </label>
+        <p id="cont"></p>
       </div>
-    </body>
+    </div>
+    <div>
+      <div class="row lines">
+        <div class="col column" id="0"></div>
+        <div class="col column" id="1"></div>
+        <div class="col column" id="2"></div>
+        <div class="col column" id="3"></div>
+        <div class="col column" id="4"></div>
+        <div class="col column" id="5"></div>
+        <div class="col column" id="6"></div>
+        <div class="col column" id="7"></div>
+        <div class="col column" id="8"></div>
+        <div class="col column" id="9"></div>
+        <div class="col column" id="10"></div>
+        <div class="col column" id="11"></div>
+        <div class="col column" id="12"></div>
+        <div class="col column" id="13"></div>
+        <div class="col column" id="14"></div>
+        <div class="col column" id="15"></div>
+        <div class="col column" id="16"></div>
+        <div class="col column" id="17"></div>
+        <div class="col column" id="18"></div>
+        <div class="col column" id="19"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="20"></div>
+        <div class="col column" id="21"></div>
+        <div class="col column" id="22"></div>
+        <div class="col column" id="23"></div>
+        <div class="col column" id="24"></div>
+        <div class="col column" id="25"></div>
+        <div class="col column" id="26"></div>
+        <div class="col column" id="27"></div>
+        <div class="col column" id="28"></div>
+        <div class="col column" id="29"></div>
+        <div class="col column" id="30"></div>
+        <div class="col column" id="31"></div>
+        <div class="col column" id="32"></div>
+        <div class="col column" id="33"></div>
+        <div class="col column" id="34"></div>
+        <div class="col column" id="35"></div>
+        <div class="col column" id="36"></div>
+        <div class="col column" id="37"></div>
+        <div class="col column" id="38"></div>
+        <div class="col column" id="39"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="40"></div>
+        <div class="col column" id="41"></div>
+        <div class="col column" id="42"></div>
+        <div class="col column" id="43"></div>
+        <div class="col column" id="44"></div>
+        <div class="col column" id="45"></div>
+        <div class="col column" id="46"></div>
+        <div class="col column" id="47"></div>
+        <div class="col column" id="48"></div>
+        <div class="col column" id="49"></div>
+        <div class="col column" id="50"></div>
+        <div class="col column" id="51"></div>
+        <div class="col column" id="52"></div>
+        <div class="col column" id="53"></div>
+        <div class="col column" id="54"></div>
+        <div class="col column" id="55"></div>
+        <div class="col column" id="56"></div>
+        <div class="col column" id="57"></div>
+        <div class="col column" id="58"></div>
+        <div class="col column" id="59"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="60"></div>
+        <div class="col column" id="61"></div>
+        <div class="col column" id="62"></div>
+        <div class="col column" id="63"></div>
+        <div class="col column" id="64"></div>
+        <div class="col column" id="65"></div>
+        <div class="col column" id="66"></div>
+        <div class="col column" id="67"></div>
+        <div class="col column" id="68"></div>
+        <div class="col column" id="69"></div>
+        <div class="col column" id="70"></div>
+        <div class="col column" id="71"></div>
+        <div class="col column" id="72"></div>
+        <div class="col column" id="73"></div>
+        <div class="col column" id="74"></div>
+        <div class="col column" id="75"></div>
+        <div class="col column" id="76"></div>
+        <div class="col column" id="77"></div>
+        <div class="col column" id="78"></div>
+        <div class="col column" id="79"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="80"></div>
+        <div class="col column" id="81"></div>
+        <div class="col column" id="82"></div>
+        <div class="col column" id="83"></div>
+        <div class="col column" id="84"></div>
+        <div class="col column" id="85"></div>
+        <div class="col column" id="86"></div>
+        <div class="col column" id="87"></div>
+        <div class="col column" id="88"></div>
+        <div class="col column" id="89"></div>
+        <div class="col column" id="90"></div>
+        <div class="col column" id="91"></div>
+        <div class="col column" id="92"></div>
+        <div class="col column" id="93"></div>
+        <div class="col column" id="94"></div>
+        <div class="col column" id="95"></div>
+        <div class="col column" id="96"></div>
+        <div class="col column" id="97"></div>
+        <div class="col column" id="98"></div>
+        <div class="col column" id="99"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="100"></div>
+        <div class="col column" id="101"></div>
+        <div class="col column" id="102"></div>
+        <div class="col column" id="103"></div>
+        <div class="col column" id="104"></div>
+        <div class="col column" id="105"></div>
+        <div class="col column" id="106"></div>
+        <div class="col column" id="107"></div>
+        <div class="col column" id="108"></div>
+        <div class="col column" id="109"></div>
+        <div class="col column" id="110"></div>
+        <div class="col column" id="111"></div>
+        <div class="col column" id="112"></div>
+        <div class="col column" id="113"></div>
+        <div class="col column" id="114"></div>
+        <div class="col column" id="115"></div>
+        <div class="col column" id="116"></div>
+        <div class="col column" id="117"></div>
+        <div class="col column" id="118"></div>
+        <div class="col column" id="119"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="120"></div>
+        <div class="col column" id="121"></div>
+        <div class="col column" id="122"></div>
+        <div class="col column" id="123"></div>
+        <div class="col column" id="124"></div>
+        <div class="col column" id="125"></div>
+        <div class="col column" id="126"></div>
+        <div class="col column" id="127"></div>
+        <div class="col column" id="128"></div>
+        <div class="col column" id="129"></div>
+        <div class="col column" id="130"></div>
+        <div class="col column" id="131"></div>
+        <div class="col column" id="132"></div>
+        <div class="col column" id="133"></div>
+        <div class="col column" id="134"></div>
+        <div class="col column" id="135"></div>
+        <div class="col column" id="136"></div>
+        <div class="col column" id="137"></div>
+        <div class="col column" id="138"></div>
+        <div class="col column" id="139"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="140"></div>
+        <div class="col column" id="141"></div>
+        <div class="col column" id="142"></div>
+        <div class="col column" id="143"></div>
+        <div class="col column" id="144"></div>
+        <div class="col column" id="145"></div>
+        <div class="col column" id="146"></div>
+        <div class="col column" id="147"></div>
+        <div class="col column" id="148"></div>
+        <div class="col column" id="149"></div>
+        <div class="col column" id="150"></div>
+        <div class="col column" id="151"></div>
+        <div class="col column" id="152"></div>
+        <div class="col column" id="153"></div>
+        <div class="col column" id="154"></div>
+        <div class="col column" id="155"></div>
+        <div class="col column" id="156"></div>
+        <div class="col column" id="157"></div>
+        <div class="col column" id="158"></div>
+        <div class="col column" id="159"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="160"></div>
+        <div class="col column" id="161"></div>
+        <div class="col column" id="162"></div>
+        <div class="col column" id="163"></div>
+        <div class="col column" id="164"></div>
+        <div class="col column" id="165"></div>
+        <div class="col column" id="166"></div>
+        <div class="col column" id="167"></div>
+        <div class="col column" id="168"></div>
+        <div class="col column" id="169"></div>
+        <div class="col column" id="170"></div>
+        <div class="col column" id="171"></div>
+        <div class="col column" id="172"></div>
+        <div class="col column" id="173"></div>
+        <div class="col column" id="174"></div>
+        <div class="col column" id="175"></div>
+        <div class="col column" id="176"></div>
+        <div class="col column" id="177"></div>
+        <div class="col column" id="178"></div>
+        <div class="col column" id="179"></div>
+      </div>
+      <div class="row lines">
+        <div class="col column" id="180"></div>
+        <div class="col column" id="181"></div>
+        <div class="col column" id="182"></div>
+        <div class="col column" id="183"></div>
+        <div class="col column" id="184"></div>
+        <div class="col column" id="185"></div>
+        <div class="col column" id="186"></div>
+        <div class="col column" id="187"></div>
+        <div class="col column" id="188"></div>
+        <div class="col column" id="189"></div>
+        <div class="col column" id="190"></div>
+        <div class="col column" id="191"></div>
+        <div class="col column" id="192"></div>
+        <div class="col column" id="193"></div>
+        <div class="col column" id="194"></div>
+        <div class="col column" id="195"></div>
+        <div class="col column" id="196"></div>
+        <div class="col column" id="197"></div>
+        <div class="col column" id="198"></div>
+        <div class="col column" id="199"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
