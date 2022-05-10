@@ -1,0 +1,11 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+}
