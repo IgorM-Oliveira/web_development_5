@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <title>Desespero</title>
+  <title>Desespera</title>
   <meta charset="UTF-8">
 
   <link rel="stylesheet" href="./style/style.css">
@@ -10,14 +10,14 @@
 
 <body>
   <div id="layout">
-    <form id="form">
+    <div id="form_input">
       <div class="input">
         <label>Nome</label>
         <Input id="name" type="text" />
       </div>
       <div class="input">
         <label>Telefone</label>
-        <Input id="phone" type="tel" />
+        <Input id="phone" type="number" />
       </div>
       <div class="input">
         <label>E-Mail</label>
@@ -25,13 +25,28 @@
       </div>
       <div class="input">
         <label>Cep</label>
-        <Input id="cep" type="text" />
+        <Input id="cep" type="number" />
       </div>
       <div class="button">
         <button onclick="enviar()">Enviar</button>
       </div>
-    </form>
-    <div id="space"></div>
-  </div>
+    </div>
+    <div id="form_value">
+      <div class="value">
+        <h3 id="local"></h3>
+      </div>
+      <div class="value">
+        <h3 id="logra"></h3>
+      </div>
+      <div class="value">
+        <h3 id="uf"></h3>
+      </div>
+      <div class="value">
+        <h3 id="bairro"></h3>
+      </div>
+    </div>
+    <div id="space">
+    </div>
+  </div>  
 </body>
 </html>
