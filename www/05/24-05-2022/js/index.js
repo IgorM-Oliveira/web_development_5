@@ -1,8 +1,19 @@
-function enviar() {
+const date = [];
+
+const generate = () => {
+
+}
+
+const back = () => {
+    document.getElementById('form_input').style.display = 'flex';
+    document.getElementById('form_value').style.display = 'none';
+}
+
+const enviar = () => {
+    const cep = document.getElementById('cep').value
     const name = document.getElementById('name').value
     const phone = document.getElementById('phone').value
-    const email = document.getElementById('email').value
-    const cep = document.getElementById('cep').value
+    const e_mail = document.getElementById('email').value
 
     fetch(`https://viacep.com.br/ws/${cep}/json/`).then((response) => {
         response.json()
@@ -10,21 +21,37 @@ function enviar() {
             document.getElementById('form_input').style.display = 'none';
             document.getElementById('form_value').style.display = 'flex';
 
-            var table = document.getElementById("myTable");
-            var row = table.insertRow(0);
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            cell1.innerHTML = "NEW CELL1";
-            cell2.innerHTML = "NEW CELL2";
+            const dateForm = {
+                name: name,
+                phone: phone,
+                e_mail: e_mail,
+                cidade: data.localidade,
+                logra: data.logradouro,
+                bairro: data.bairro,
+            }
 
-            document.getElementById('bairro').innerHTML = data.bairro
-            document.getElementById('local').innerHTML = data.localidade
-            document.getElementById('logra').innerHTML = data.logradouro
-            document.getElementById('uf').innerHTML = data.uf
+            date.push(dateForm);
+
+            let table = document.getElementById("table");
+            let row = table.insertRow(-1);
+
+            let nome = row.insertCell(0);
+            let tel = row.insertCell(1);
+            let email = row.insertCell(2);
+            let cidade = row.insertCell(3);
+            let logra = row.insertCell(4);
+            let bairro = row.insertCell(5);
+
+            for (let i = 0; i < date.length; i++) {
+                nome.innerHTML = date[i].name;
+                tel.innerHTML = date[i].phone;
+                email.innerHTML = date[i].e_mail;
+                cidade.innerHTML = date[i].cidade;
+                logra.innerHTML = date[i].logra;
+                bairro.innerHTML = date[i].bairro;
+            }
         })
       }).catch((error) => {
-          console.log(error)
+          console.error(error)
       })
-
-    console.log(name, phone, email, cep)
 }

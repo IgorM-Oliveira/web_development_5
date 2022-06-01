@@ -51,6 +51,7 @@ table {
 }
 
 button {
+    margin: 0 1rem;
     font-size: 20px;
     box-sizing: border-box;
     border: none;
@@ -58,9 +59,7 @@ button {
 }
 
 .button {
-    display: flex;
     padding: 10px;
-    flex-direction: column;
 }
 
 #form_input, #form_value {
