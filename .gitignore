@@ -2,6 +2,7 @@
 docker-compose.yml
 
 # idea
+/.idea
 *.idea
 *.xml
 
