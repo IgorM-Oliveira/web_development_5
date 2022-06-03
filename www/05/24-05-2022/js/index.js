@@ -1,7 +1,11 @@
+faker.setLocale('pt_BR');
 const date = [];
 
 const generate = () => {
-
+    document.getElementById('cep').value = faker.address.zipCode('########')
+    document.getElementById('name').value = faker.name.findName()
+    document.getElementById('phone').value = faker.phone.phoneNumber('+55 9#### ####')
+    document.getElementById('email').value = faker.internet.exampleEmail()
 }
 
 const back = () => {

@@ -2,8 +2,10 @@
 docker-compose.yml
 
 # idea
+.idea
 /.idea
 *.idea
+.xml
 *.xml
 
 # dependencies
