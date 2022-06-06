@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <title>Desespera</title>
+  <title>Desespera 2.0</title>
+
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./style/style.css">
+
   <script type="text/javascript" charset="UTF-8" src="./js/faker.js"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script type="text/javascript" src="./js/index.js"></script>
 </head>
 
@@ -33,7 +38,7 @@
       <div class="input">
         <label>
           Cep
-          <Input id="cep" type="number" >
+          <Input id="cep" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="8">
         </label>
       </div>
       <div class="button">
